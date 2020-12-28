@@ -36,10 +36,10 @@ namespace ThePoggersGamers {
         //if manager detects the easter egg has been triggered, switch all the bee's sprites
         //and correctly change the next sprite to it's alt to guard against bug
         public void EasterEgg() {
+            beeNext = (beeNext == beeLeftArm) ? beeRightArmAlt : beeLeftArmAlt;
             beeIdle = beeIdleAlt;
             beeLeftArm = beeLeftArmAlt;
             beeRightArm = beeRightArmAlt;
-            beeNext = (beeNext == beeLeftArm) ? beeRightArmAlt : beeLeftArmAlt;
         }
     }
 }
