@@ -150,7 +150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1b60a121ced77f428b1898416aac58a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugGameOnly: 0
+  debugGameOnly: 1
   minigame: {fileID: 11400000, guid: a24a304f6140b33449dba51a2e283d7c, type: 2}
 --- !u!4 &215339488
 Transform:
@@ -176,6 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 643277984}
   - component: {fileID: 643277983}
+  - component: {fileID: 643277985}
   m_Layer: 0
   m_Name: Bee
   m_TagString: Untagged
@@ -247,6 +248,70 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &643277985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 643277982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebabb35b543d8724482aa94ea4e3a1db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  beeIdle: {fileID: 21300000, guid: 4e35221a39b329b4e90e4b0e97ecbbeb, type: 3}
+  beeLeftArm: {fileID: 21300000, guid: a2845976971e04e46b1cc47d2630d735, type: 3}
+  beeRightArm: {fileID: 21300000, guid: a14e69af360694c4cbbef1c841c20592, type: 3}
+  beeIdleAlt: {fileID: 0}
+  beeLeftArmAlt: {fileID: 0}
+  beeRightArmAlt: {fileID: 0}
+--- !u!1 &813560330
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 813560331}
+  - component: {fileID: 813560332}
+  m_Layer: 0
+  m_Name: BeeGame Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &813560331
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813560330}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &813560332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813560330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a01aa848987082498dc3e289fa08442, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bee: {fileID: 643277982}
+  honey: {fileID: 0}
+  numWinHoneyBottles: 0
 --- !u!1 &918096777
 GameObject:
   m_ObjectHideFlags: 0
