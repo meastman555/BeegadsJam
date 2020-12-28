@@ -12,6 +12,12 @@ namespace ThePoggersGamers {
         [SerializeField] GameObject honey;
         private HoneyScript honeyScript;
 
+        [SerializeField] GameObject background;
+        private MiscScript backgroundScript;
+
+        [SerializeField] GameObject table;
+        private MiscScript tableScript;
+
         //makes sure we only activate the easter egg once
         private bool easterEgg;
         private int numSpacesPressed; 
@@ -20,11 +26,14 @@ namespace ThePoggersGamers {
         void Start() {
             beeScript = bee.GetComponent<BeeScript>();
             honeyScript = honey.GetComponent<HoneyScript>();
+            backgroundScript = background.GetComponent<MiscScript>();
+            tableScript = table.GetComponent<MiscScript>();
             numSpacesPressed = 0;
         }
 
         //each frame checks for spacebar press and/or easter egg activation
         void Update() {
+            checkEasterEgg();
             if(Input.GetKeyDown(KeyCode.Space)) {
                 ++numSpacesPressed;
                 //TODO: despawn spacebar object at the bottom of screen
@@ -34,7 +43,6 @@ namespace ThePoggersGamers {
                 MinigameManager.Instance.minigame.gameWin = honeyScript.ProcessAction(numSpacesPressed);
                 Debug.Log(MinigameManager.Instance.minigame.gameWin);                
             }
-            checkEasterEgg();
         }
 
         //OOOOOOOO SUPER SECRET EASTER EGG!!!!
@@ -44,8 +52,8 @@ namespace ThePoggersGamers {
                 easterEgg = true;
                 beeScript.EasterEgg();
                 honeyScript.EasterEgg();
-                //background.GetComponent<SpriteRenderer>().sprite = backgroundAlt;
-                //OR backgroundScript.EasterEgg();
+                backgroundScript.EasterEgg();
+                tableScript.EasterEgg();
             }
         }
     }
