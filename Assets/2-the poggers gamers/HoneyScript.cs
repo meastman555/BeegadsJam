@@ -41,5 +41,6 @@ public class HoneyScript : MonoBehaviour
     //switches the array of honey sprites to the easter egg one
     public void EasterEgg() {
         honeyPhases = honeyPhasesAlt;
+        spriteRenderer.sprite = honeyPhases[index];
     }
 }

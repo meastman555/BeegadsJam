@@ -38,6 +38,7 @@ namespace ThePoggersGamers {
         public void EasterEgg() {
             beeIdle = beeIdleAlt;
             beeNext = (beeNext == beeLeftArm) ? beeRightArmAlt : beeLeftArmAlt;
+            spriteRenderer.sprite = beeIdle;
             beeLeftArm = beeLeftArmAlt;
             beeRightArm = beeRightArmAlt;
         }
