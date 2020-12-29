@@ -258,7 +258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugGameOnly: 0
-  minigame: {fileID: 11400000, guid: a24a304f6140b33449dba51a2e283d7c, type: 2}
+  minigame: {fileID: 11400000, guid: 26a9e578fc39a074e96a2787ef1753ee, type: 2}
 --- !u!4 &215339488
 Transform:
   m_ObjectHideFlags: 0
@@ -1052,7 +1052,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111019281}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.21, z: 3}
+  m_LocalPosition: {x: 0, y: 0.21, z: 1}
   m_LocalScale: {x: 1.62, y: 1.7, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
