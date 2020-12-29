@@ -31,6 +31,8 @@ namespace ThePoggersGamers {
         public void SwitchArms() {
             spriteRenderer.sprite = beeNext;
             beeNext = (beeNext == beeLeftArm) ? beeRightArm : beeLeftArm;
+            //uses the pop sound to simulate the bee's eating noise
+            MinigameManager.Instance.PlaySound("pop");
         }
 
         //if manager detects the easter egg has been triggered, switch all the bee's sprites

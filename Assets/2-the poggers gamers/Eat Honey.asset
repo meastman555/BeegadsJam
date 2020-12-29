@@ -10,9 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10b6289b71b71e942a2499ed4eb71c02, type: 3}
-  m_Name: EAT
+  m_Name: Eat Honey
   m_EditorClassIdentifier: 
   gameTime: 0
   music: {fileID: 8300000, guid: 901990600f08795459a30f6bea8eceab, type: 3}
-  sounds: []
-  gameWin: 0
+  sounds:
+  - soundName: win
+    clip: {fileID: 8300000, guid: 6ae7bafe34a615d47bf75aed5c5e31ea, type: 3}
+    volume: 1
+    minPitch: 1
+    maxPitch: 1
+    source: {fileID: 0}
+  - soundName: pop
+    clip: {fileID: 8300000, guid: e6012a3e0b1cbe8479b63d48894ad3c9, type: 3}
+    volume: 1
+    minPitch: 1
+    maxPitch: 1
+    source: {fileID: 0}
+  gameWin: 1

@@ -35,7 +35,6 @@ public class HoneyScript : MonoBehaviour
         }
         //pressing space after game has been won keeps the game in the win state
         return true;
-        
     }
 
     //switches the array of honey sprites to the easter egg one
